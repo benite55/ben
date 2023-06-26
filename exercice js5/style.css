@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+form {
+    display: none;
+}
+
+body{
+    background-color: rgb(10, 10, 32);
+    background-image: url(./WhatsApp\ Image\ 2023-06-15\ at\ 15.11.20.jpeg);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relatve;
+    color: white;
+    line-height: 30px;
+    width: 90%;
+    max-width: 500px;
+    margin: 100px auto 0;
+}
+
+h1{
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+
+.intro{
+    border-bottom: solid #474958;
+    padding-bottom: 30px;
+}
+
+
+.button-container {
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+}
+  
+button {
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: white;
+    color: #020842;
+    border: none;
+    font-weight: bold;
+}
+#form-container {
+    display: none;
+    margin: 40px auto;
+    text-align: center;
+}
+  
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+  
+input {
+    width: 150px;
+    padding:2px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+
+#second{
+    border:solid #474958;
+    padding: 25px;
+}
+#second input{
+    width: 30px;
+    
+}
+
+#second button{
+    transform:translate(100%);
+}
+
+
+.par-scnd{
+    text-align: start;
+}
+
+
+h3{
+    text-align: center;
+    border-bottom: solid #474958;
+    padding-bottom: 19px;
+}
+
+#third{
+    border:solid #474958;
+    padding: 25px;
+}
+#input-age{
+    width: 50px;
+}
+#telephone{
+    width: 100px;
+}
+#email{
+    width: 150px;
+}
+
+#radio{
+    width: 30px;
+}
+
+#fouth{
+    border:solid #474958;
+    padding: 25px;
+}
+
+.enre-btn{
+    transform: translate(100%);
+}
+
+#junior{
+    border-bottom: solid #474958;
+    padding-bottom: 20px;
+    text-align: start;
+    margin-top: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#seignior{
+    border-bottom: solid #474958;
+    padding-bottom: 20px;
+    text-align: start;
+    margin-top: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+span{
+    color: rgb(150, 37, 37);
+    font-weight: bolder;
+}
+h5{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.anc-decision{
+    border-top: solid #474958;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+.third-bttn{
+    transform: translate(80%);
+}
+
+
+#fifth{
+    border:solid #474958;
+    padding: 25px;
+}
+
+.end-btn{
+    transform: translate(100%);
+    margin-top: 20px;
+}
+#content-nouveau{
+    border-bottom: solid #474958;
+    padding: 15px;
+}
+#chant{
+    border-bottom: solid #474958;
+    padding-bottom: 20px;
+    text-align: start;
+    margin-top: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#slam{
+    border-bottom: solid #474958;
+    padding-bottom: 20px;
+    text-align: start;
+    margin-top: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

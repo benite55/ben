@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enregistrement pour le groupe de danse chrétien</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>Effective Joy</h1>
+  <div id="first" style="display: none;">
+    <p class="intro">
+      Profiter de la vie est une réalité pour la survie. un appel à servir,découvrir le magnifique en nous. 
+      Un goupe des jeunes chrétiens dotés des merveilleux talents et dons. b 
+      Pour la gloire de Dieu,avec les angles on ADORE ,Avec le CHRIST on communique une JOIE EFFECTIVE (1 thessaliens 5:16) 
+    </p>
+    <div class="button-container">
+      <button onclick="showForm()">Integer le groupe EJO</button>
+      </div>
+  </div>
+    <div id="second" style="display: none;">
+      <p class="par-scnd">
+        Dans EFFECTIVE JOY,nous oeuvrons dans plusieurs departements,
+        mais pour le moment nous n'avons que trois,
+        et chaque departement a sa specifite,
+        Choisissez alors un departement selons vos apreciations;
+      </p>
+      <h3>Choisissez et Enregistrez-vous dans le departement de:</h3>
+	    <input type="radio" name="art" value="danse"> Danse<br>
+	    <input type="radio" name="art" value="chant"> Chant<br>
+      <input type="radio" name="art" value="slam"> Slam<br>
+      <button onclick="afficherFormulaire()">Confirmer</button>
+    </div>
+    <div id="third" style="display: none;">
+      <form id="danse-formulaire" onsubmit="showFormilaire(event)">
+        <label for="nom">
+          Nom :
+          <input type="text" id="nom" name="nom">
+        </label>
+        <label for="age">
+          Âge :
+          <input type="number" id="input-age" name="age">
+        </label>
+        <label for="sexe">
+          Sexe :
+          <select id="sexe" name="sexe">
+            <option value="masculin">masculin</option>
+            <option value="feminin">feminin</option>
+          </select>
+        </label>
+        <label for="telephone">Numéro de téléphone :
+          <input type="tel" id="telephone" name="telephone">
+        </label>
+        <label for="E-mail">
+          E-mail :
+          <input type="email" id="email" name="email">
+        </label>
+        <label for="adresse">
+          Adresse :
+          <input type="text" id="adresse" name="adresse">
+        </label>
+        <label for="radio">
+          Nouveau membre :
+          <input type="radio" id="radio" name="membre" value="nouveau"><br>
+          Ancien membre :
+          <input type="radio" id="radio" name="membre" value="ancien"><br>
+        </label>
+        <input type="submit" class="enre-btn" value="Enregistrer"> 
+      </form>
+    </div >
+    <div id="fouth" style="display: none;">
+      <h4>Bienvenu dans EFFECTIVE Joy</h4>
+      <p id="junior">
+        vous etes <span>JUNIOR😊.</span><br>
+             Restez dans la phase d'observation jusqu'a nouvelordre...<br>
+            Rassurez-vous mettre ce reglement en parique sinon on recours a la punition,Rassurez-vous aussi aussi que 
+            les parents sont au courant de votre integration dans le groupe EJO,par ce que des fois on aura recours aux 
+            parents dans certaines situations.
+      </p>
+      <p id="seignior">
+       vous etes <span> SEIGNOIR😊.</span> <br>
+         Restez dans la phase d'observation jusqu'a nouvelordre...<br>
+            Rassurez-vous mettre ce reglement en parique sinon on recours a la punition,Rassurez-vous aussi aussi que 
+            les parents sont au courant de votre integration dans le groupe EJO,par ce que des fois on aura recours aux 
+            parents dans certaines situations.
+      </p>
+      <p id="chant"></p>
+      <p id="slam"></p>
+      <P class="par-thrd">
+        <h5>VOICI LE REGLEMENT DU GROUPE</h5><br>
+        1. Respecter les autres membres du groupe.<br>
+        2. Respecter les dirigeants du groupe.<br>
+        3. Maintenir un environnement sûr et accueillant.<br>
+        4. Éviter les comportements abusifs, tels que l'intimidation, la violence ou le harcèlement. <br>
+        5. Respecter les horaires et les lieux de réunion du groupe.<br>
+        6. Participer aux activités du groupe de manière régulière.<br>
+        7. Respecter les règles les informations partagées pendant les réunions.<br>
+        8. Éviter la consommation d'alcool ou de drogues. <br>
+        9. Respecter les lois locales. <br>
+       10. Respecter les règles d'hygiène personnelle. <br>
+      </P>
+      <div class="anc-decision">
+        <form id="ancien-decision">
+          <label for="text" >
+          Moi <input type="text"  id="nom" name="nom" > je confirme ma presence dans le goupe EFFECTIVE JOY ,
+          j'accept d'etre le responsable de mes actes conformement au reglement DU groupe. <br>
+          </label>
+          <div id="dans">
+            etes vous seignior ou junior??<br>
+            <label  for="radio">
+              SEIGNOIR :
+              <input type="radio" id="radio" name="degree" value="seignior"><br>
+              JUNIOR :
+              <input type="radio" id="radio" name="degree" value="junior"><br>
+            </label> 
+          </div>
+          <input type="button" class="third-bttn" value="Confirmer" onclick="afficherAncienNom()">
+        </form>
+      </div>
+      <div class="nouv-decision">
+        <form  id="decision" >
+          <label for="text" >
+            Moi,<input type="text" id="nom" name="nom" > j'integre le goupe EFFECTIVE JOY.<br>
+            j'accept d'etre le responsable de mes actes conformement au reglement.
+          </label>
+          <input type="button" class="third-bttn" value="Confirmer" onclick="afficherNouveauNom()">
+        </form>
+      </div>
+    </div>
+    <div id="fifth" style="display: none;">
+      <div id="content-ancien"></div>
+      <div id="content-nouveau"></div>
+      <form id="submit">
+        <input type="submit" class="end-btn" value="Terminer">
+      </form>
+    </div>
+	<script src="script.js"></script>
+</body>
+</html>
